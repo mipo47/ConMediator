@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConMediator.Properties" GeneratedClassName="System">
+  <Profiles />
+  <Settings>
+    <Setting Name="PacketSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">4096</Value>
+    </Setting>
+    <Setting Name="Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:3581/</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tester</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tester</Value>
+    </Setting>
+    <Setting Name="ContentSize" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">262144</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

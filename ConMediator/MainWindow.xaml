@@ -1,0 +1,58 @@
+﻿<Window x:Class="ConMediator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Connection mediator" Height="433" Width="315" BorderThickness="1"
+	Closing="Window_Closing">
+    <Grid Margin="3,3,3,3">
+		<Button Name="StartupButton" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="40" Click="StartupButton_Click">Start</Button>
+		<Button Name="ConnectButton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,0,0,0" Height="25" Click="ConnectButton_Click">Connect</Button>
+        
+        <Label Margin="98,0,0,0" Name="label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="44" Height="29">Listen:</Label>
+		<ComboBox Height="23" HorizontalAlignment="Left" Margin="148,2,0,0" Name="ListenCombo" VerticalAlignment="Top" Width="69" SelectedIndex="0">
+			<ListViewItem Content="TCP/IP" />
+			<ListViewItem Content="HTTP" />
+		</ComboBox>
+		<TextBox Name="ListenPortText" Margin="219,4,0,0" VerticalAlignment="Top" Height="21" HorizontalAlignment="Left" Width="65">23</TextBox>
+		
+		<Separator Margin="0,30,0,0" VerticalAlignment="Top" Height="1" />
+        
+		<Label Height="23" Margin="0,30,96,0" VerticalAlignment="Top" Padding="0, 4, 0, 0">Connection string</Label>
+		<Label Height="23" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="90" Padding="0, 4, 0, 0">Connection type</Label>
+	
+        <TextBox Margin="0,55,0,0" Name="ConStringText" VerticalAlignment="Top" Height="23" HorizontalAlignment="Left" Width="189"></TextBox>
+        <ComboBox Margin="0,55,0,0" Name="ConTypeCombo" SelectedIndex="0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="90" Height="23">
+            <ListViewItem Content="TCP/IP" />
+            <ListViewItem Content="Serial port" />
+			<ListViewItem Content="HTTP" />
+        </ComboBox>
+
+        <ComboBox Height="21" SelectedIndex="20" Margin="0,82,68,0" Name="SpeedCombo" VerticalAlignment="Top" SelectionChanged="SpeedCombo_SelectionChanged">
+			<ListViewItem Content="16 b/s, 128 bps" />
+			<ListViewItem Content="32 b/s, 256 bps" />
+			<ListViewItem Content="64 b/s, 512 bps" />
+			<ListViewItem Content="128 b/s, 1 kbps" />
+			<ListViewItem Content="256 b/s, 2 kbps" />
+			<ListViewItem Content="512 b/s, 4 kbps" />
+			<ListViewItem Content="1 kb/s, 8 kbps" />
+			<ListViewItem Content="2 kb/s, 16 kbps" />
+			<ListViewItem Content="4 kb/s, 32 kbps" />
+			<ListViewItem Content="8 kb/s, 64 kbps" />
+			<ListViewItem Content="16 kb/s, 128 kbps" />
+			<ListViewItem Content="32 kb/s, 256 kbps" />
+			<ListViewItem Content="64 kb/s, 512 kbps" />
+			<ListViewItem Content="128 kb/s, 1 mbps" />
+			<ListViewItem Content="256 kb/s, 2 mbps" />
+			<ListViewItem Content="512 kb/s, 4 mbps" />
+			<ListViewItem Content="1 mb/s, 8 mbps" />
+			<ListViewItem Content="2 mb/s, 16 mbps" />
+			<ListViewItem Content="4 mb/s, 32 mbps" />
+			<ListViewItem Content="8 mb/s, 64 mbps" />
+			<ListViewItem Content="16 mb/s, 128 mbps" />
+		</ComboBox>
+		<Label Height="23" HorizontalAlignment="Right" Margin="0,82,1,0" VerticalAlignment="Top" Width="64" Padding="0, 2">Max speed</Label>
+
+        <ComboBox Name="WindowCombo" VerticalAlignment="Top" Margin="0,110,0,0" Height="20" />
+   
+        <TextBox  Name="ConsoleText" Background="#FFEEEEDD" Margin="0,135,0,0" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+	</Grid>
+</Window>

@@ -1,0 +1,7 @@
+Release/
+PortSharer/
+LicenseMaker/
+bin/
+obj/
+*.scc
+*.vssscc
