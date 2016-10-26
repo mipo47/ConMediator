@@ -1,2 +1,3 @@
 # ConMediator
-TCP proxy with UI
+ 
+![Alt text](/ConMediator/screenshot.PNG "UI")
